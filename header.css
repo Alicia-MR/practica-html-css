@@ -14,18 +14,37 @@ nav {
 .logo {
     height: 80px;
     max-height: 100px;
+    margin: 0;
 }
 
 ul {
-display: flex;
+display: none;
 list-style: none;
+margin: 0;
+gap: 15px;
 }
 
 li {
-    padding: 20px;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: var(--primary-color);
+}
+
+@media screen and (width > 768px) {
+    ul {
+        display: flex;
+    }
+    .btn {
+        background-color: var(--secondary-color);
+        transition: opacity 0.3s ease-in-out;
+    }
+    .btn:hover {
+        opacity: 0.3; /* Hace que el fondo sea más transparente */
+    }
 }
