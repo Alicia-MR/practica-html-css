@@ -1,0 +1,28 @@
+.footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    background-color: var(--secondary-color);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90vw;
+}
+
+.rrss {
+    display: flex;
+    gap: 3vh;
+}
+
+.copyright {
+    text-align: right;
+}
