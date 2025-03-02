@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 2px solid #2271b3;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.radio-field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 5px;
+}
+
+.buttons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.btn {
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #2271b3;
+}
+
+.btn2 {
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (hover: hover) {
+    .buttons {
+        cursor: pointer;
+    }
+    .btn:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn2:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}

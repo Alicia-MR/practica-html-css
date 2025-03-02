@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contacto.css">
+</head>
+<body class="container">
+    <main class="card">
+        <h1>Contacta conmigo</h1>
+        <form action="./registro" method="post" novalidate>
+            <div class="form-element">
+                <label for="nombre">Introduce tu nombre:</label>
+                <input required type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-element">
+                <label for="apellidos">Introduce tus apellidos:</label>
+                <input required type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            </div>
+            <div class="form-element">
+                <label for="tel">Introduce tu teléfono:</label>
+                <input required type="tel" name="telefono" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                title="Formato: 123-123-123" placeholder="600-000-000">
+            </div>
+            <fieldset class="radio-field">
+                <legend>¿Cómo me conociste?</legend>
+                <div>
+                    <label for="uni">Universidad</label>
+                    <input required type="radio" name="how" id="uni" value="universidad">
+                </div>
+                <div>
+                    <label for="kickoff">Keepcoding kick-off</label>
+                    <input required type="radio" name="how" id="kickoff" value="kickoff" checked>
+                </div>
+                <div>
+                    <label for="cole">Colegio</label>
+                    <input required type="radio" name="how" id="cole" value="colegio">
+                </div>
+                <div>
+                    <label for="github">Github</label>
+                    <input required type="radio" name="how" id="github" value="github">
+                </div>
+            </fieldset>
+            <div class="form-element">
+                <label for="github">Tag de Github:</label>
+                <input type="text" id="github" name="github" pattern="^@[^\s]+" required 
+                placeholder="@tuUsuario">
+            </div>
+            <div class="form-element">
+                <label for="mensaje">Cuéntame algo sobre ti:</label>
+                <textarea required name="mensaje" id="mensaje" 
+                rows="4" maxlength="180" placeholder="Escribe aquí">
+                </textarea>
+            </div>
+            <div>
+                <label for="newsletter">Quiero recibir la newsletter:</label>
+                <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+            </div>
+            <div class="buttons">
+                <button class="btn" type="submit">Enviar</button>
+                <button class="btn2" type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
